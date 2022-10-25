@@ -28,6 +28,7 @@ main {
   height: 100%;
   background-color: var(--cream);
   padding: 1.25rem;
+  position: relative;
 }
 
 article {
@@ -139,7 +140,7 @@ button:hover {
 .attribution {
   font-size: 11px;
   text-align: center;
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   bottom: 0.5rem;
