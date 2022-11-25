@@ -24,7 +24,10 @@
   <main>
     <article>
       <div class="img-container">
-        <img src="./images/image-product-mobile.jpg" alt="product image">
+        <picture>
+          <source srcset="./images/image-product-desktop.jpg" media="(min-width: 640px)">
+          <img src="./images/image-product-mobile.jpg" alt="product image">
+        </picture>
       </div>
 
       <div class="info">
@@ -57,25 +60,6 @@
       Coded by <a href="https://github.com/wuzgood98" target="_blank">Gideon Addo</a>.
     </div>
   </main>
-
-  <script>
-    const imgElem = document.querySelector("img");
-
-    window.addEventListener("load", () => {
-      if (window.innerWidth > 640) {
-        imgElem.src = "./images/image-product-desktop.jpg";
-      } else {
-        imgElem.src = "./images/image-product-mobile.jpg";
-      }
-    });
-    window.addEventListener("resize", () => {
-      if (window.innerWidth > 640) {
-        imgElem.src = "./images/image-product-desktop.jpg";
-      } else {
-        imgElem.src = "./images/image-product-mobile.jpg";
-      }
-    });
-  </script>
 </body>
 
 </html>
